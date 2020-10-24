@@ -27,7 +27,7 @@ public class ToDoEntity {
         return title;
     }
 
-    public boolean isDone() {
+    public boolean getDone() {
         return done;
     }
 
