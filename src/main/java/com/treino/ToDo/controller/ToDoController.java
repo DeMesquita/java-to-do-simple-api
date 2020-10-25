@@ -33,5 +33,19 @@ public class ToDoController {
         return ResponseEntity.ok(service.getTask(id));
     }
 
+    @PutMapping("/update/{id}")
+    public ResponseEntity<ToDoEntity> updateTask(@PathVariable int id, @RequestBody ToDoEntity toDo){
+        return ResponseEntity.ok(service.updateTask(id, toDo));
+    }
+
+    @GetMapping("/getAllDone")
+    public ResponseEntity<List<ToDoEntity>> getTask(@RequestParam("done") boolean done){
+        return ResponseEntity.ok(service.getAllByStatus(done));
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<List<ToDoEntity>> deleteTask(@PathVariable int id){
+        return ResponseEntity.ok(service.deleteTask(id));
+    }
 
 }
