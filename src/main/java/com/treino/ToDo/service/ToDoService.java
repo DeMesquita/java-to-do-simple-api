@@ -26,7 +26,7 @@ public class ToDoService {
     }
 
     public List<ToDoEntity> getAllByStatus( boolean done){
-        return repository.getAllByStatus(done);
+        return repository.findAllByDone(done);
     }
 
     public ToDoEntity updateTask(int id, ToDoEntity toDo){

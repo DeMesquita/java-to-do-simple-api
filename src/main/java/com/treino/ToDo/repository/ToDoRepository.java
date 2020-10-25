@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface ToDoRepository extends CrudRepository<ToDoEntity, Integer> {
-    List<ToDoEntity> getAllByStatus(boolean done);
+    List<ToDoEntity> findAllByDone(boolean done);
 
 }
