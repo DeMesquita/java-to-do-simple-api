@@ -39,7 +39,7 @@ public class ToDoController {
     }
 
     @GetMapping("/getAllDone")
-    public ResponseEntity<List<ToDoEntity>> getTask(@RequestParam("done") boolean done){
+    public ResponseEntity<List<ToDoEntity>> getAllByStatus(@RequestParam("done") boolean done){
         return ResponseEntity.ok(service.getAllByStatus(done));
     }
 
