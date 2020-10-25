@@ -1,0 +1,10 @@
+com/treino/ToDo/ToDoApplication.java
+ com.treino.ToDo.ToDoApplication
+com/treino/ToDo/entity/ToDoEntity.java
+ com.treino.ToDo.entity.ToDoEntity
+com/treino/ToDo/controller/ToDoController.java
+ com.treino.ToDo.controller.ToDoController
+com/treino/ToDo/service/ToDoService.java
+ com.treino.ToDo.service.ToDoService
+com/treino/ToDo/repository/ToDoRepository.java
+ com.treino.ToDo.repository.ToDoRepository
